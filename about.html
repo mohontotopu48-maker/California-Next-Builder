@@ -53,20 +53,20 @@
             <!-- Mermaid Mind Map -->
             <div style="background: rgba(0,0,0,0.5); padding: 30px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
                 <pre class="mermaid">
-                    flowchart TD
-                        A[Homeowner Need] -->|Submits Request| B(System Intake)
-                        B --> C{Algorithmic Matching}
-                        C -->|Location Filter| D[Local County Validation]
-                        C -->|Service Filter| E[Category Validation]
-                        D --> F[Identified Verified Pro]
-                        E --> F
-                        F -->|Instant Handoff| G((Direct Contact via WhatsApp/Call))
-                        G --> H[Estimate Provided]
-                        H --> I[Service Resolved]
-                        
-                        style A fill:#FF7B00,stroke:#333,stroke-width:2px,color:#fff
-                        style G fill:#25D366,stroke:#333,stroke-width:2px,color:#fff
-                        style I fill:#10B981,stroke:#333,stroke-width:2px,color:#fff
+flowchart TD
+    A[Homeowner Need] -->|Submits Request| B[System Intake]
+    B --> C{Algorithmic Matching}
+    C -->|Location Filter| D[Local County Validation]
+    C -->|Service Filter| E[Category Validation]
+    D --> F[Identified Verified Pro]
+    E --> F
+    F -->|Instant Handoff| G[Direct WhatsApp Chat]
+    G --> H[Estimate Provided]
+    H --> I[Service Resolved]
+    
+    style A fill:#FF7B00,stroke:#333,stroke-width:2px,color:#fff
+    style G fill:#25D366,stroke:#333,stroke-width:2px,color:#fff
+    style I fill:#10B981,stroke:#333,stroke-width:2px,color:#fff
                 </pre>
             </div>
             
