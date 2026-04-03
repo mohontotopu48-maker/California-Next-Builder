@@ -545,3 +545,31 @@ footer {
   .hero-trust { flex-direction: column; gap: 15px; }
   .footer-grid { grid-template-columns: 1fr; }
 }
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: #FFF;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+    z-index: 1000;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+.floating-whatsapp svg {
+    width: 35px;
+    height: 35px;
+}

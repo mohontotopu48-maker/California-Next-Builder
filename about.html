@@ -6,22 +6,31 @@
     <title>About Us | California Next Builder</title>
     <meta name="description" content="Learn about our mission to connect homeowners in Orange and LA County with top-tier local service professionals.">
     
-    <script src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_10e022fb5c9f4ebea7a518b61fa81171"></script>
+    <script defer src="https://link.msgsndr.com/js/external-tracking.js" data-tracking-id="tk_10e022fb5c9f4ebea7a518b61fa81171"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Mermaid.js for Booking Journey Mind Map -->
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
 </head>
 <body>
 
     <header class="scrolled">
         <div class="container nav-container">
-            <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="assets/logo.png" alt="California Next Builder" style="height: 60px; width: auto;"></a>
+            <a href="index.html" class="logo" style="display: flex; align-items: center;"><img src="https://i.ibb.co/9mLs72Yq/California-Next-Builder-1.png" alt="California Next Builder" style="height: 60px; width: auto;"></a>
             <ul class="nav-links">
                 <li><a href="index.html#services">Services</a></li>
                 <li><a href="index.html#how-it-works">How It Works</a></li>
                 <li><a href="index.html#coverage">Coverage</a></li>
-                <li><a href="contact.html" class="btn btn-outline" style="padding: 8px 16px;">Partner With Us</a></li>
+                <li><a href="partner.html" class="btn btn-outline" style="padding: 8px 16px;">Partner With Us</a></li>
             </ul>
+            <div class="mobile-menu-btn" style="cursor: pointer; display: none;">
+                <i data-lucide="menu"></i>
+            </div>
         </div>
     </header>
 
@@ -29,21 +38,43 @@
         <div class="hero-bg"></div>
         <div class="container hero-content reveal">
             <h1>About <span class="gradient-text">California Next Builder</span></h1>
-            <p>We believe finding a reliable contractor shouldn't be stressful. Discover how we're changing the local home service industry.</p>
+            <p>We believe finding a reliable contractor shouldn't be stressful. Discover how we're reshaping the local home service industry to give homeowners complete control.</p>
         </div>
     </section>
 
     <section class="container" style="padding-bottom: 100px;">
         <div class="glass-card reveal">
             <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--orange-primary);">Our Mission</h2>
-            <p style="margin-bottom: 30px; font-size: 1.1rem;">California Next Builder was founded with one simple premise: homeowners deserve fast, reliable, and transparent access to local professionals. Whether you're dealing with a midnight plumbing emergency in Orange County or planning a major renovation in Los Angeles, you need pros you can trust.</p>
-            <p style="margin-bottom: 30px; font-size: 1.1rem;">Instead of leaving you to scroll through endless directory listings, our system intelligently qualifies your demand, verifies local contractors, and matches you based on exact parameters like service category and county proximity.</p>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Unlike generic review sites that sell your information to 50 random contractors, California Next Builder was founded with one simple premise: <strong>homeowners deserve fast, reliable, and exclusive access to verified local professionals.</strong> Whether you're dealing with a midnight plumbing emergency in Orange County or planning a major HVAC overhaul in Los Angeles, you need pros you can trust without the spam.</p>
             
-            <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--orange-primary);">Why We Are Different</h2>
+            <h2 style="font-size: 2rem; margin-top: 50px; margin-bottom: 20px; color: var(--orange-primary);">The Booking Mind Map</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Here is exactly how our ecosystem protects your time and routes you directly to a solution:</p>
+            
+            <!-- Mermaid Mind Map -->
+            <div style="background: rgba(0,0,0,0.5); padding: 30px; border-radius: 12px; margin-bottom: 40px; text-align: center;">
+                <pre class="mermaid">
+                    flowchart TD
+                        A[Homeowner Need] -->|Submits Request| B(System Intake)
+                        B --> C{Algorithmic Matching}
+                        C -->|Location Filter| D[Local County Validation]
+                        C -->|Service Filter| E[Category Validation]
+                        D --> F[Identified Verified Pro]
+                        E --> F
+                        F -->|Instant Handoff| G((Direct Contact via WhatsApp/Call))
+                        G --> H[Estimate Provided]
+                        H --> I[Service Resolved]
+                        
+                        style A fill:#FF7B00,stroke:#333,stroke-width:2px,color:#fff
+                        style G fill:#25D366,stroke:#333,stroke-width:2px,color:#fff
+                        style I fill:#10B981,stroke:#333,stroke-width:2px,color:#fff
+                </pre>
+            </div>
+            
+            <h2 style="font-size: 2rem; margin-bottom: 20px; color: var(--orange-primary);">Why We Are Dominating Local</h2>
             <div class="why-bullets">
-                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>Curated Matches:</strong> We do the heavy lifting of finding licensed professionals.</span></div>
-                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>Speed of Service:</strong> Built for fast response times.</span></div>
-                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>Quality Control:</strong> We only partner with verified local contractors.</span></div>
+                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>Curated Matches:</strong> We do the heavy lifting of finding licensed professionals. No more gambling on random search results.</span></div>
+                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>WhatsApp Injection:</strong> We allow you to directly text via WhatsApp for instantaneous responses.</span></div>
+                <div class="why-bullet-item"><i data-lucide="check-circle" style="color: #10B981;"></i><span><strong>Quality Control:</strong> We only partner with verified local contractors holding active licenses in CA.</span></div>
             </div>
         </div>
     </section>
@@ -53,7 +84,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <a href="index.html" class="logo" style="margin-bottom: 20px; display: inline-block;">
-                        <img src="assets/logo.png" alt="California Next Builder" style="height: 50px; width: auto;">
+                        <img src="https://i.ibb.co/9mLs72Yq/California-Next-Builder-1.png" alt="California Next Builder" style="height: 50px; width: auto;">
                     </a>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 10px;">3400 Twilight Dr. Fullerton<br>California - 92835, United States</p>
                     <p style="color: var(--orange-primary); font-size: 1.1rem; font-weight: bold; margin-bottom: 15px;">+1 562-944-0500</p>
@@ -88,7 +119,19 @@
         </div>
     </footer>
 
-    <script>lucide.createIcons();</script>
-    <script src="js/main.js"></script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://chat.whatsapp.com/Hn4Ox86GwWz0Wp1oDQ6aA0" target="_blank" class="floating-whatsapp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <!-- Initialize App -->
+    <script defer src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
 </body>
 </html>
